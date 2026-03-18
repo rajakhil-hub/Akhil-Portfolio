@@ -33,7 +33,7 @@ export default function TextReveal({
     }),
   };
 
-  const child = {
+  const child: import('framer-motion').Variants = {
     hidden: {
       opacity: 0,
       y: 20,
@@ -44,7 +44,7 @@ export default function TextReveal({
       y: 0,
       rotateX: 0,
       transition: {
-        type: 'spring' as const,
+        type: 'spring',
         damping: 12,
         stiffness: 100,
       },
