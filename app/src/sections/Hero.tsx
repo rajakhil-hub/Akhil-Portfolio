@@ -48,9 +48,9 @@ export default function Hero() {
     },
   };
 
-  const letterVariant = {
-    hidden: { 
-      opacity: 0, 
+  const letterVariant: import('framer-motion').Variants = {
+    hidden: {
+      opacity: 0,
       y: 100,
       rotateX: -90,
     },
@@ -59,7 +59,7 @@ export default function Hero() {
       y: 0,
       rotateX: 0,
       transition: {
-        type: 'spring' as const,
+        type: 'spring',
         damping: 12,
         stiffness: 100,
       },
