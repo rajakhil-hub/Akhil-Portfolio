@@ -11,8 +11,8 @@ const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
 export default function TextScramble({ text, className = '', delay = 0 }: TextScrambleProps) {
   const [displayText, setDisplayText] = useState('');
-  const [isComplete, setIsComplete] = useState(false);
-  const frameRef = useRef<number>();
+  const [_isComplete, setIsComplete] = useState(false);
+  const frameRef = useRef<number>(undefined);
 
   useEffect(() => {
     const timeout = setTimeout(() => {

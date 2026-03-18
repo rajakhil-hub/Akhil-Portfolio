@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 export default function GlowCursor() {
   const [isHovering, setIsHovering] = useState(false);
-  const [cursorVariant, setCursorVariant] = useState('default');
+  const [_cursorVariant, _setCursorVariant] = useState('default');
   
   const cursorX = useSpring(0, { stiffness: 500, damping: 28 });
   const cursorY = useSpring(0, { stiffness: 500, damping: 28 });

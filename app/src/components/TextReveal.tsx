@@ -24,7 +24,7 @@ export default function TextReveal({
 
   const container = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+    visible: (_i = 1) => ({
       opacity: 1,
       transition: { 
         staggerChildren: staggerDelay, 
@@ -44,7 +44,7 @@ export default function TextReveal({
       y: 0,
       rotateX: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 12,
         stiffness: 100,
       },
